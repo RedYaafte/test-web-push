@@ -1,2 +1,4 @@
 django
 pywebpush
+gunicorn
+django-heroku
