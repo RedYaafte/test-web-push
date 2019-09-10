@@ -1,10 +1,14 @@
+"use strict";
+
 self.addEventListener("push", function(event) {
   console.log("[Service Worker] Push Received.");
   console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
 
+  let body = event.data.text();
+
   const title = "Push Codelab";
   const options = {
-    body: "Camaras el Alans",
+    body: body,
     icon: "images/icon.png",
     badge: "images/badge.png"
   };
