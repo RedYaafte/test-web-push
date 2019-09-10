@@ -1,6 +1,6 @@
 "use strict";
 
-const applicationServerPublicKey = "<apy-key>";
+const applicationServerPublicKey = "<api-key>";
 
 const pushButton = document.querySelector(".js-push-btn");
 
